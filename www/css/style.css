@@ -1,5 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap');
 
-* {
+/* GERAL */
+body {
     font-family: "Wix Madefor Display", sans-serif;
+}
+
+.navbar-brand{
+    font-weight: 500;
+}
+
+.genero-icon{
+    background-color: #f2f2f2;
+    margin-bottom: 4px;
+}
+
+/* Home */
+.menu-genero-title{
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.hq-card{
+    background-color: #CDCCD1;
+}
+
+.hq-tag{
+    background-color: #6593CE;
+    font-weight: 600;
+    font-size: 10px;
+    padding: 7px;
+}
+
+.hq-title, .hq-subtitle{
+    font-size: 14px;
+}
+
+
+/* Genero */
+.genero-title{
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 12px;
+}
+
+.genero-hq-title{
+    font-size: 14px;
+}
+
+.hq-btn{
+    background-color: #C90800;
+    color: white;
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.hq-img{
+    min-height: 260px;
 }
