@@ -1,17 +1,45 @@
 <!-- Copiando os componentes que vão ser renderizados pelo JS para caso dê problema não perder como tava no inicio  -->
 
 <!-- CARD DA HQ NA HOME  -->
-<div class="card border-light mb-3 hq-card" id="hq-card">
-    <div class="row">
-        <div class="col-5">
-            <img src="" class="img-fluid rounded-start" id="hq-imagem" />
+<div class="card border-light mb-3 hq-card">
+    <div class="row g-0">
+      <div class="col-5">
+        <img src="assets/watchmen.png" class="img-fluid rounded-start" />
+      </div>
+      <div class="col-7 d-flex flex-column">
+        <div class="card-body d-flex flex-column px-2">
+          <div class="w-auto">
+            <p class="fw-semibold mb-0 hq-title">Título do Card</p>
+            <p class="mb-1 hq-subtitle">Subtítulo</p>
+            <span class="badge rounded-pill fw-light hq-tag">Gênero</span>
+          </div>
+          <div class="mt-auto">
+            <button class="btn btn-sm hq-btn">Veja Mais</button>
+          </div>
         </div>
-        <div class="col-7 px-0">
-            <div class="card-body px-0">
-                <p class="fw-semibold mb-0 hq-title"></p>
-                <p class="mb-1 hq-subtitle"></p>
-                <span class="badge rounded-pill fw-light hq-tag" id="hq-genero"></span>
-            </div>
-        </div>
+      </div>
     </div>
-</div>
+  </div>
+
+  <!-- HEADER DA PÁGINA DE GENERO -->
+  <img src="assets/icones/acao.png" alt="Imagem redonda" class="rounded-circle genero-icon"/>
+  <h5 class="genero-title">Gênero</h5>
+
+  <!-- CARDS DA PÁGINA DE GENERO -->
+  <div class="col">
+    <div class="card">
+      <img src="assets/batman1.png" class="card-img-top img-fluid" alt="..."/>
+      <div class="d-flex flex-column">
+        <div class="card-body d-flex flex-column px-2">
+          <div class="w-auto mb-1">
+            <p class="fw-semibold mb-0 hq-title">Título do Card</p>
+            <p class="mb-1 hq-subtitle">Subtítulo</p>
+            <span class="badge rounded-pill fw-light hq-tag">Gênero</span>
+          </div>
+          <div class="mt-auto">
+            <button class="btn btn-sm hq-btn">Veja Mais</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -133,7 +133,7 @@ export const revistasQuadrinho = [
         ]
     },
     {
-        titulo: "Watchme: Edição Definitiva (Volume único)",
+        titulo: "Watchmen: Edição Definitiva (Volume único)",
         imagem:"watchmen.png",
         autor: "Alan Moore",
         descricao: "Num mundo alternativo à beira da guerra nuclear, super-heróis são reais --- mas falhos, corrompidos e perseguidos. Quando um ex-membro dos vigilantes mascarados é assassinado, uma conspiração vem à tona, revelando segredos obscuros e colocando o destino da humanidade em risco. *Watchmen* é uma narrativa densa e crítica sobre poder, moralidade e o verdadeiro significado do heroísmo.",

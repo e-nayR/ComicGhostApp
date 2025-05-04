@@ -1,5 +1,6 @@
 import {revistasQuadrinho} from './database.js'
 window.onload = function() {
+    // Para cada objeto dentro do array revistasQuadrinho é montado um Card com os dados do objeto
     revistasQuadrinho.forEach(function(revista){
         const titulo_completo = revista.titulo;
         if (revista.titulo.includes(":")){
@@ -11,24 +12,28 @@ window.onload = function() {
             var subtitulo = null;
         }
 
-        //Criando a estrutura do layout
-        const row = document.createElement('div');
-        row.classList.add('row');
-        const col5 = document.createElement('div');
-        col5.classList.add('col-5');
-        const col7 = document.createElement('div');
-        col7.classList.add('col-7', 'px-0');
-
         // Criando a estrutura do card
         const card = document.createElement('div');
         card.classList.add('card','border-light', 'mb-3', 'hq-card');
+
+        const row = document.createElement('div');
+        row.classList.add('row', 'g-0');
+
+        const col5 = document.createElement('div');
+        col5.classList.add('col-5');
         // Card Imagem
         const cardImg = document.createElement('img');
         cardImg.classList.add('img-fluid', 'rounded-start');
         cardImg.src = "assets/" + revista.imagem;
+
+        const col7 = document.createElement('div');
+        col7.classList.add('col-7', 'd-flex', 'flex-column');
         // Card Body
         const cardBody = document.createElement('div');
-        cardBody.classList.add('card-body', 'px-0');
+        cardBody.classList.add('card-body', 'd-flex', 'flex-column', 'px-2');
+        
+        const divCardBody = document.createElement('div');
+        divCardBody.classList.add('w-auto', 'mb-1');
         // Título do Card
         const cardTitle = document.createElement('p');
         cardTitle.classList.add('fw-semibold', 'mb-0', 'hq-title');
@@ -38,18 +43,28 @@ window.onload = function() {
         cardTag.classList.add('badge', 'rounded-pill', 'fw-light', 'hq-tag');
         cardTag.textContent = revista.genero;
 
+        const divCardBtn = document.createElement('div');
+        divCardBtn.classList.add('mt-auto');
+        // Card Button
+        const cardBtn = document.createElement('div');
+        cardBtn.classList.add('btn','btn-sm','hq-btn');
+        cardBtn.textContent = "Veja mais";
+
         col5.appendChild(cardImg);// adicionando a Imagem dentro da coluna
         row.appendChild(col5); // adicionando na linha
 
-        cardBody.appendChild(cardTitle); // adicionando titulo do card dentro do card body
+        divCardBody.appendChild(cardTitle); // adicionando titulo do card dentro do card body
         // Subtitulo do Card
         if (subtitulo != null){
             const cardSubtitle = document.createElement('p');
             cardSubtitle.classList.add('mb-1', 'hq-subtitle');
             cardSubtitle.textContent = subtitulo;
-            cardBody.appendChild(cardSubtitle); // adicionando o subtitulo, caso tenha, dentro do Card Body
+            divCardBody.appendChild(cardSubtitle); // adicionando o subtitulo, caso tenha, dentro do Card Body
         }
-        cardBody.appendChild(cardTag); // adicionando a Tag depois do subtitulo ou titulo
+        divCardBody.appendChild(cardTag); // adicionando a Tag depois do subtitulo ou titulo
+        divCardBtn.appendChild(cardBtn);
+        cardBody.appendChild(divCardBody);
+        cardBody.appendChild(divCardBtn)
         col7.appendChild(cardBody);// adicionando o card body dentro da coluna
         row.appendChild(col7); // adicionando na linha, abaixo da col5
 
