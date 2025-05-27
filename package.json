@@ -1,0 +1,25 @@
+{
+  "name": "comicghostapp",
+  "version": "1.0.0",
+  "description": "Explicação sobre a organização do código, e os comando par rodar o capacitor",
+  "main": "index.html",
+  "scripts": {
+    "server": "npx live-server ./www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e-nayR/ComicGhostApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/e-nayR/ComicGhostApp/issues"
+  },
+  "homepage": "https://github.com/e-nayR/ComicGhostApp#readme",
+  "dependencies": {
+    "@capacitor/android": "^7.2.0",
+    "@capacitor/cli": "^7.2.0",
+    "@capacitor/core": "^7.2.0"
+  }
+}

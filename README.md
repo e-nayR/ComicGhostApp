@@ -27,7 +27,7 @@ npm install @capacitor/core @capacitor/cli
 
 Inicializar Capacitor, appId e appName do arquivo capacitor.config.json
 ```
-npx cap init meu-app com.example.meuapp
+npx cap init
 ```
 
 Adicionando Plataforma Android
