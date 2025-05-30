@@ -45,10 +45,15 @@ window.onload = function() {
 
         const divCardBtn = document.createElement('div');
         divCardBtn.classList.add('mt-auto');
+        // Link Card Button
+        const linkCardBtn = document.createElement('a');
+        linkCardBtn.classList.add('hq-link-btn');
+        linkCardBtn.href = `./interna.html?id=${revista.id}`
         // Card Button
         const cardBtn = document.createElement('div');
         cardBtn.classList.add('btn','btn-sm','hq-btn');
         cardBtn.textContent = "Veja mais";
+        linkCardBtn.appendChild(cardBtn);
 
         col5.appendChild(cardImg);// adicionando a Imagem dentro da coluna
         row.appendChild(col5); // adicionando na linha
@@ -62,7 +67,7 @@ window.onload = function() {
             divCardBody.appendChild(cardSubtitle); // adicionando o subtitulo, caso tenha, dentro do Card Body
         }
         divCardBody.appendChild(cardTag); // adicionando a Tag depois do subtitulo ou titulo
-        divCardBtn.appendChild(cardBtn);
+        divCardBtn.appendChild(linkCardBtn);
         cardBody.appendChild(divCardBody);
         cardBody.appendChild(divCardBtn)
         col7.appendChild(cardBody);// adicionando o card body dentro da coluna

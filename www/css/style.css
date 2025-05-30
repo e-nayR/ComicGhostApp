@@ -24,6 +24,12 @@ body {
     font-weight: 600;
 }
 
+.hq-link-btn:hover{
+    color: #C90800;
+    font-size: 10px;
+    font-weight: 600;
+}
+
 .hq-title, .hq-subtitle{
     font-size: 13px;
 }

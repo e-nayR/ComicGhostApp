@@ -73,10 +73,15 @@ window.onload = function() {
 
         const divCardBtn = document.createElement('div');
         divCardBtn.classList.add('mt-auto');
+        // Link Card Button
+        const linkCardBtn = document.createElement('a');
+        linkCardBtn.classList.add('hq-link-btn');
+        linkCardBtn.href = `./interna.html?id=${revista.id}`
         // Card Button
         const cardBtn = document.createElement('div');
         cardBtn.classList.add('btn','btn-sm','hq-btn');
         cardBtn.textContent = "Veja mais";
+        linkCardBtn.appendChild(cardBtn);
 
         
         divCardBody.appendChild(cardTitle);
@@ -89,7 +94,7 @@ window.onload = function() {
         }
         divCardBody.appendChild(cardTag);
         cardBody.appendChild(divCardBody);
-        divCardBtn.appendChild(cardBtn);
+        divCardBtn.appendChild(linkCardBtn);
         cardBody.appendChild(divCardBtn);
         flexbox.appendChild(cardBody);
 
