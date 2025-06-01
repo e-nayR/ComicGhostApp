@@ -42,7 +42,7 @@ Obs: ``` npx cap sync ``` serve para sincronizar o Capacitor com as mudanças do
 ```
 npx cap open android
 ```
-* Executar no navegador
+* Executar no navegador (necessário instalar o live-server)
 ```
-npx cap serve
+npm run server
 ```

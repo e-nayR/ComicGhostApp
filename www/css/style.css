@@ -75,3 +75,11 @@ body {
 .hq-img{
     height: 216px;
 }
+
+.voltar {
+    color: #000000;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+    font-weight: 500;
+}
